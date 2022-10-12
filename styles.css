@@ -509,3 +509,16 @@ ANIMATIONS
 }
 
 
+/* 
+
+RESOLUTIONS
+
+*/
+
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
