@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 
 
 html {
@@ -467,8 +467,67 @@ button, select {
 
 
 
+/* 
 
+steps
 
+*/
+
+.steps__wrapper {
+    width: 100%;
+    max-width: 1280px;
+    height: calc(100vh - 80);
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.followingsteps {
+    width: 50%;
+    height: 500px;
+    margin-left: 50px;
+    
+}
+
+.steps__img {
+    width: 50%;
+    max-width: 1280px;
+}
+
+.steps__header {
+    text-align: left;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.step {
+    display: flex;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.steps__following {
+    padding-top: 30px;
+}
+
+.number__step {
+    margin-right: 20px;
+    color: lightgray;
+    font-weight: 900;
+
+}
+
+.step__subheader {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #242424;
+}
+
+.step__para {
+    width: 85%;
+}
 
 
 /* 
