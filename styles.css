@@ -83,11 +83,19 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 24px;
 }
 
 .logo {
-    width: 70px;
+    width: 2.5rem;
+    margin-right: 0.75rem;
+
+}
+
+
+.treact__nav {
+    font-weight: 900;
+    font-size: 1.5rem;
 }
 
 .nav__link--list {
@@ -118,6 +126,9 @@ nav {
     color: #6030b1;
     margin: 0 12px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -125,7 +136,8 @@ nav {
 
 
 #landing {
-    margin-top: 80px;
+    padding: 24px;
+    max-width: 1280px;
     height: calc(100vh - 80);
 }
 
@@ -167,20 +179,42 @@ nav {
 }
 
 .input__email {
-    border: 2px solid lightgray;
-    border-radius: 20px;
-    
+    border: none;
     font-size: 16px;
     margin-right: 20px;
     z-index: 1;
+    border-color: transparent;
+    
 }
+
+.no-outline:focus {
+    outline: none;
+  }
 
 .getstarted__wrapper {
     display: flex;
-    width: 40%;
-    border-radius: 30px;
+    width: 50%;
     padding: 4px;
 }
+
+.getstarted__btn {
+    width: 100%;
+    max-width: 80%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px;
+    border-radius: 30px;
+    
+}
+
+.getstarted__btn:hover {
+    opacity: 0.7;
+    transition: all 300ms ease;
+}
+
+
 
 
 .subtitle__img {
@@ -196,8 +230,8 @@ nav {
 
 
 .header__title {
-    width: 45%;
-    font-size: 38px;
+    width: 50%;
+    font-size: 1.875rem;
     font-weight: 700;
     line-height: 1.25;
     --tw-text-opacity: 1;
@@ -375,6 +409,8 @@ nav {
 .learnmore__para {
     padding-right: 100px ;
     margin-bottom: 24px;
+    color: black;
+    font-weight: 200;
 }
 
 .learnmore_btn {
