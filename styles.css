@@ -36,8 +36,18 @@ p {
     color: lightgray;
 }
 
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
 .text--purple {
-    color: blue;
+    color: #6315FF;
 }
 
 
@@ -136,9 +146,14 @@ nav {
 
 
 #landing {
-    padding: 24px;
+    width: 100%;
     max-width: 1280px;
     height: calc(100vh - 80);
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__container {
@@ -162,26 +177,37 @@ nav {
     margin-top: -20px;
 }
 
-.btn {
+.btn__get {
     
-    background-color: #0044ff;
+    background-color: #6315FF;
     color: white;
     padding: 12px 24px;
     font-size: 16px;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 20px;
+    transition: background-color 250ms ease-out;
+
 
 }
 
-.btn:hover {
-    opacity: 0.7;
-    transition: all 300ms ease;
+.btn__get:hover {
+    background-color: #130d99;
+    transition:  all 300ms ease;
 }
+
+button, select {
+    text-transform: none;
+}
+
 
 .input__email {
     border: none;
     font-size: 16px;
-    margin-right: 20px;
+    margin-left: 20px;
+    width: 100%;
     z-index: 1;
     border-color: transparent;
     
@@ -200,17 +226,21 @@ nav {
 .getstarted__btn {
     width: 100%;
     max-width: 80%;
-    border: 1px solid black;
+    border: 3px solid lightgray;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 6px;
     border-radius: 30px;
+    
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
     
 }
 
 .getstarted__btn:hover {
     opacity: 0.7;
+    border-color: gray;
     transition: all 300ms ease;
 }
 
@@ -230,8 +260,8 @@ nav {
 
 
 .header__title {
-    width: 50%;
-    font-size: 1.875rem;
+    width: 70%;
+    font-size: 45px;
     font-weight: 700;
     line-height: 1.25;
     --tw-text-opacity: 1;
@@ -260,6 +290,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    max-width: 1280px;
     
 
 }
@@ -286,7 +318,6 @@ nav {
 }
 
 .hightlight__img {
-    border: 2px solid lightgray;
     color: #7342d6;
     width: 50px;
     height: 50px;
@@ -300,6 +331,7 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
     transform: translateY(-30px);
+    border: 1px solid lightgray;
     
 }
 
@@ -396,7 +428,6 @@ nav {
     width: 45%;
     position: relative;
     flex-shrink: 0;
-    border: 1px solid lightgray;
     
 }
 
@@ -409,6 +440,7 @@ nav {
 .learnmore__para {
     padding-right: 100px ;
     margin-bottom: 24px;
+    font-size: 20px;
     color: black;
     font-weight: 200;
 }
@@ -425,6 +457,12 @@ nav {
 
 .learnmore_btn:hover {
     opacity: 0.7;
+}
+
+.img__learn {
+    width: 100%;
+    max-width: 1280px;
+    border: 1px solid lightgray;
 }
 
 
