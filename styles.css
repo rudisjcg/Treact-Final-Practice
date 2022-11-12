@@ -11,6 +11,7 @@ html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    color: #223E63;
 
 }
 
@@ -318,7 +319,7 @@ button, select {
 }
 
 .hightlight__img {
-    color: #7342d6;
+    color: #6315FF;
     width: 50px;
     height: 50px;
     display: flex;
@@ -326,13 +327,16 @@ button, select {
     align-items: center;
     border-radius: 50px;
     font-size: 32px;
-    margin-bottom: 24px;
     margin-right: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    transform: translateY(-30px);
+    transform: translateY(-15px);
     border: 1px solid lightgray;
     
+}
+
+.fa-solid {
+    color: #6315FF;
 }
 
 
@@ -370,8 +374,6 @@ button, select {
 
 .service__rewrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 
@@ -403,7 +405,7 @@ button, select {
     font-size: 2.25rem;
     font-weight: 700;
     line-height: 1.25;
-    color: black;
+    color: #223E63;
     font-weight: bold;
 
 }
@@ -522,11 +524,69 @@ steps
 .step__subheader {
     margin: 0 auto;
     margin-bottom: 10px;
-    color: #242424;
+    color: #223E63;
 }
 
 .step__para {
     width: 85%;
+}
+
+/* 
+
+values
+
+*/
+
+.values__part {
+    display: flex;
+}
+
+.img__values {
+    border: 1px solid black;
+    width: 50%;
+}
+
+.img__value {
+    width: 100%;
+}
+
+.values__descrip {
+    border: 1px solid black;
+    height: 100%;
+    width: 50%;
+}
+
+.descrip__part {
+    width: 100%;
+    display: flex;
+}
+
+.values__para {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.affor {
+    width: 50%;
+}
+
+.profe {
+    width: 50%;
+}
+
+.affor__part {
+    display: flex;
+    
+}
+
+.dollar {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-dollar-sign {
+    border: 1px solid black;
+    
 }
 
 
