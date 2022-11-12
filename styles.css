@@ -291,8 +291,9 @@ button, select {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     max-width: 1280px;
+    margin-top: 40px;
     
 
 }
@@ -536,13 +537,15 @@ steps
 values
 
 */
+.row__values {
+    margin-bottom: 40px;
+}
 
 .values__part {
     display: flex;
 }
 
 .img__values {
-    border: 1px solid black;
     width: 50%;
 }
 
@@ -550,8 +553,8 @@ values
     width: 100%;
 }
 
+
 .values__descrip {
-    border: 1px solid black;
     height: 100%;
     width: 50%;
 }
@@ -559,6 +562,7 @@ values
 .descrip__part {
     width: 100%;
     display: flex;
+    margin-top: 30px;
 }
 
 .values__para {
@@ -576,18 +580,50 @@ values
 
 .affor__part {
     display: flex;
+    height: 30px;
+    flex-direction: row;
     
+}
+
+.affor_descrip {
+    margin-top: 16px;
+    width: 80%;
 }
 
 .dollar {
+    width: 10%;
+    padding: 8px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #98e6b6;
+    margin-right: 10px;
 }
 
-.fa-dollar-sign {
-    border: 1px solid black;
-    
+
+
+.backcase {
+    background-color: #ffb3b2;
 }
+
+.fa-suitcase {
+    color: #8c3033;
+}
+.fa-dollar-sign {
+    color: #246841;
+}
+
+
+.dollar__header {
+    width: 50%;
+}
+
+
+.btn_values {
+    margin-top: 40px;
+}
+
 
 
 /* 
