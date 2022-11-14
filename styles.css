@@ -233,6 +233,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 1000ms ease;
+}
+
+.personal__logo:hover {
+    color: #6030b1;
 }
 
 
