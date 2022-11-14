@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/7bea90c0ec.js" crossorigin="anonymous"></script>
     <title>Treact</title>
 </head>
@@ -56,6 +57,26 @@
                 </li>
 
             </ul>
+
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu_list">
+                        <a href="#" class="menu__link" onclick="closeMenu()"> Home</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()"> Books</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="menu__link no--cursor" class="menu__link" onclick="closeMenu()"> Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
     </section>
@@ -95,7 +116,7 @@
     </section>
 
 
-    </section>
+    
 
     <section class="container">
         <div class="row row__features">
@@ -283,7 +304,7 @@
                             </div>
                             <div class="affor_descrip">
 
-                                <p>We promise to offer you the best rate we can - at par with the industry standard.</p>
+                                <p class="affor__para">We promise to offer you the best rate we can - at par with the industry standard.</p>
                             </div>
                         </div>
                         <div class="affor">
@@ -295,7 +316,7 @@
                             </div>
                             <div class="affor_descrip">
 
-                                <p>We promise to offer you the best rate we can - at par with the industry standard.</p>
+                                <p class="affor__para">We promise to offer you the best rate we can - at par with the industry standard.</p>
                             </div>
                         </div>
 
