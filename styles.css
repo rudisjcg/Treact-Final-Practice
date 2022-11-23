@@ -811,7 +811,6 @@ pricing__row
 }
 
 .pricing__row {
-    border: 1px solid black;
     width: 100%;
     max-width: 1200px;
     height: 100vh;
@@ -848,8 +847,12 @@ pricing__row
     text-align: center;
     margin-top: 64px;
     margin-bottom: 20px;
+    transition: all 300ms ease;
     
-    
+}
+
+.plans:hover {
+    transform: translateY(-1px);
 }
 
 .color__border {
@@ -969,9 +972,51 @@ pricing__row
 }
 
 
+.secondplan {
+    color: white;
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    background-color: rgb(100, 21, 255);
+    background-origin: padding-box;
+    
+}
+
+.bordersecond {
+    background: transparent;
+}
+
+.second__header, .second_desc {
+    color: white;
+}
+
+.second_btn {
+    background: white;
+    color: rgb(100, 21, 255);
+}
+
+.second_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+.last_border, .last_btn {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.header__para {
+    text-align: center;
+    width: 70%;
+}
+
+.header_color {
+    color: rgb(36, 62, 99);
+}
 
 /* 
 
+switches, router printers, remotetly 
 footer
 
 */
