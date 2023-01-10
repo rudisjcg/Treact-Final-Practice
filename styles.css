@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 
 html {
@@ -9,7 +10,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: #223E63;
     border-width: 0px;
@@ -339,7 +340,7 @@ nav {
     background-color: #6315FF;
     color: white;
     padding: 12px 24px;
-    font-size: 16px;
+    font-size: 8px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
@@ -371,6 +372,7 @@ select {
     border-color: transparent;
 
 }
+
 
 .no-outline:focus {
     outline: none;
@@ -416,6 +418,17 @@ select {
 .header__img {
     width: 60%;
     animation: animate-picture 800ms 200ms backwards;
+    animation: moving 800ms infinite alternate;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateY(-5px);
+    }
+    
+    100% {
+        transform: translateY(5);
+    }
 }
 
 
@@ -813,7 +826,7 @@ pricing__row
 .pricing__row {
     width: 100%;
     max-width: 1200px;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
 
 }
@@ -1081,6 +1094,142 @@ footer {
 
 }
 
+/* 
+Reviews
+*/
+
+.reviews{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 200px;
+
+}
+
+.header__reviews {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.stars {
+    color: rgb(246, 173, 85);
+}
+
+
+
+.container{
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    max-width: 987px;
+    width: 100%;
+    background-color: var(--color-dark);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+.swiper {
+    width: 600px;
+    height: auto;
+  }
+
+.swiper .swiper-slide .flex{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper .swiper-slide .comments{
+    background-color: var(--color-light);
+    padding: 1.5em 2em;
+    width: 50%;
+    border-radius: 5px;
+    font-size: .9em;
+    position: relative;
+}
+
+.swiper .swiper-slide .comments::after{
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--color-light);
+    z-index: -99;
+}
+
+
+.swiper .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.swiper .profile img{
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    margin: 10px 0;
+}
+
+.swiper .profile > a{
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.swiper .profile > span{
+    color: var(--color-text);
+    font-size: .8em;
+}
+
+.swiper .swiper-button-prev, .swiper-button-next{
+    color: var(--color-text);
+    display: none;
+} 
+
+@media (min-width: 320px) {
+    .board{
+        width: auto;
+    }
+
+    .swiper {
+        width: 320px;
+      }
+
+      .board > h1, p{
+          padding: 0 2em;
+      }
+}
+
+@media (min-width: 768px) {
+    .board{
+        width: 100%;
+    }
+
+    .swiper {
+        width: 600px;
+      }
+
+    .swiper .swiper-button-prev, .swiper-button-next{
+        display: initial;
+    }
+
+}
 
 /* 
 
@@ -1173,6 +1322,40 @@ RESOLUTIONS
     .nav__link--list {
         display: none;
     }
+
+    .header__img {
+        margin-top: 20px;
+    }
+    
+    .values__part {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img__values {
+        margin-top: 30px;
+    }
+    .steps__img {
+        width: 40%;
+        margin-left: 20px;
+    }
+
+    .plans__options {
+        justify-content: center;
+    }
+
+    .reviews {
+        flex-direction: column;
+    }
+    
+    .resochange {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .header__img{
+        display: none;
+    }
 }
 
 
@@ -1183,6 +1366,10 @@ RESOLUTIONS
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+
+    .header__img{
+        display: none;
     }
 
     .getstarted__btn {
